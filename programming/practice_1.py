@@ -51,6 +51,7 @@ n = int(input())
 p = [i for i in range(n + 1)]
 p[1] = 0
 i = 2
+
 while i <= n:
     if p[i] != 0:
         j = i + i
