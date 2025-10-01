@@ -41,6 +41,7 @@ print(k, l, p)
 
 a = input().lower()
 kp = defaultdict(int)
+
 for i in a:
     kp[i] += 1
 print(sorted(kp.items())[:3])
