@@ -30,6 +30,7 @@ a = "AQWERTYUIOPSDFGHJKLZXCVBNM"
 num = "1234567890"
 s = "!@#$%^&*"
 k = l = p = ""
+
 for i in range(3):
     k += choice(a)
     l += choice(num)
