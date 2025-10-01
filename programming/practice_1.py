@@ -1,5 +1,6 @@
-from random import choice
 from collections import defaultdict
+from random import choice
+
 
 
 c = float(input())
