@@ -66,6 +66,7 @@ print(p)
 i = 1234567890
 l = 1
 c = 9
+
 while i > l * c:
     i -= l * c
     l += 1
