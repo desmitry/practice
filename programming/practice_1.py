@@ -2,7 +2,6 @@ from collections import defaultdict
 from random import choice
 
 
-
 c = float(input())
 
 print(c, "по Цельсию =", f"{(c*9/5)+32:.2f}", "по Фаренгейту")
