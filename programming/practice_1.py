@@ -1,13 +1,15 @@
-from random import choice
 from collections import defaultdict
+from random import choice
 
 
 c = float(input())
+
 print(c, "по Цельсию =", f"{(c*9/5)+32:.2f}", "по Фаренгейту")
 print(c, "по Цельсию =", f"{c+273.15:.2f}", "по Кельвину")
 
 
 n = int(c)
+
 if n % 2 == 0:
     print("Четное")
 else:
@@ -28,6 +30,7 @@ a = "AQWERTYUIOPSDFGHJKLZXCVBNM"
 num = "1234567890"
 s = "!@#$%^&*"
 k = l = p = ""
+
 for i in range(3):
     k += choice(a)
     l += choice(num)
@@ -38,6 +41,7 @@ print(k, l, p)
 
 a = input().lower()
 kp = defaultdict(int)
+
 for i in a:
     kp[i] += 1
 print(sorted(kp.items())[:3])
@@ -47,6 +51,7 @@ n = int(input())
 p = [i for i in range(n + 1)]
 p[1] = 0
 i = 2
+
 while i <= n:
     if p[i] != 0:
         j = i + i
@@ -61,6 +66,7 @@ print(p)
 i = 1234567890
 l = 1
 c = 9
+
 while i > l * c:
     i -= l * c
     l += 1
