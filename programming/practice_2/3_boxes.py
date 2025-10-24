@@ -1,5 +1,11 @@
 def print_pack_report(cakes_count):
-    """Return a packaging report."""
+    """Return a packaging report.
+
+    Args:
+        cakes_count (int): Number of cakes.
+    Returns:
+        str: Packaging report.
+    """
     for i in range(cakes_count, 0, -1):
         if i % 3 == 0 and i % 5 == 0:
             print(f"{i} - расфасуем по 3 или по 5")

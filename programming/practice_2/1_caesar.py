@@ -3,7 +3,13 @@ ra = "абвгдеёжзийклмнопрстиуфхцчшщьъэюя"
 
 
 def ceasars_cipher(x: str, y: int) -> str:
-    """Process string through Caesar's Cipher."""
+    """Process string through Caesar's Cipher.
+    Args:
+        x (str): String to encrypt.
+        y (int): Shift.
+    Returns:
+        str: Encrypted string.
+    """
     r = ""
     for c in x:
         if c in ea:

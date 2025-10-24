@@ -2,10 +2,18 @@ import random
 import string
 
 
-def generate_password(
-    l, low, up, digits, specials
-):
-    """Generate a password based on given criteria."""
+def generate_password(l, low, up, digits, specials):
+    """Generate a password based on given criteria.
+
+    Args:
+        l (int): Length of password.
+        low (int): Include uppercase letters.
+        up (int): Include lowercase letters.
+        digits (int): Include digits.
+        specials (int): Include special characters.
+    Returns:
+        str: Generated password.
+    """
     character_pool = ""
     if low:
         character_pool += string.ascii_lowercase
@@ -47,7 +55,5 @@ while True:
         break
     print("\nВыберите хоть что-то!\n")
 
-password = generate_password(
-    length, use_lower, use_upper, use_digits, use_symbols
-)
+password = generate_password(length, use_lower, use_upper, use_digits, use_symbols)
 print(f"Ваш пароль: {password}")
